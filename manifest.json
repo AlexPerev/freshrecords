@@ -1,0 +1,29 @@
+{ 
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "init.js" ],
+      "matches": [ "http://freshrecords.ru/forumdisplay.php*" ,"http://freshrecords.ru/showthread.php*","http://freshrecords.ru/gmp3.php*"]
+   } ],
+   "description": "Adds player to theme pages",
+   "icons": {
+      "128": "icons/freshplayer128.png",
+      "16": "icons/freshplayer16.png",
+      "48": "icons/freshplayer48.png"
+   },
+   "manifest_version": 2,
+   "name": "FreshRecords player",
+   "permissions": [ "http://freshrecords.ru/*" ],
+   "version": "6.0",
+  "web_accessible_resources": [
+	"content.js",
+  "player/player.js",
+  "player/gapro.js",
+  "player/jxplayer.html5.js",
+  "player/jxpsrv.js",
+  "player/related.js",
+  "player/sharing.js",
+  "player/jxplayer.flash.swf",
+  "player/skins/vapor.xml"
+  ],
+  "update_url": "http://plugins.corp.alyans48.ru/freshrecords/updates.xml"
+}
